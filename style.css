@@ -1,0 +1,207 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, img {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    text-size-adjust: none;
+}
+button{
+    background-color: initial;
+    border: none;    
+    cursor: pointer;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.decorated{
+    text-decoration: underline;
+}
+
+a, button, h2, p, h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    max-width: 50px;
+}
+.pointer{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid gray;
+}
+.headerButtons{
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+}
+main nav li{
+    display: inline-block;
+    color: gray;
+    margin-right: 1rem;
+}
+main nav li button{
+    color: gray;
+    border-color: grey;
+}
+li img{
+    width: 40px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1.2rem;
+}
+button{
+    padding: 0.2rem 0.5rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+nav, .mainPage, article, aside, .twitterSection, .peopleElement{
+    display: flex;
+}
+aside{
+    width: 30%;
+    height: 1000px;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    border-right: 1px solid gray;
+    width: 70%;
+    height: 1000px;
+    padding: 3rem 2rem;
+}
+nav{
+border-bottom: 1px solid gray;
+padding-bottom: 1rem;
+}
+nav .tabs{
+    margin-right: 3rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.articleText{
+    width: 80%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.articleImg{
+    width: 20%;
+    height: 200px;
+    background-color: black;
+    margin-top: 5rem;
+}
+.articleLabel{
+    font-weight: 200;
+    display: inline-block;
+}
+.articleIcon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.twitterSection, .recommended, .peopleSection{
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    border-bottom: 1px solid gray;
+}
+.recommended{
+    text-align: start;
+    font-weight: bold;
+}
+.peopleSection{
+    text-align: start;
+    font-weight: bold;
+}
+.twitterSection > *{
+    margin: 1rem;
+}
+
+.pills{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pill{
+    margin: 0.3rem;
+}
+.peopleElement{
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.peopleImg{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+}
+.peopleNames{
+    flex: 1 0 auto;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem;
+}
