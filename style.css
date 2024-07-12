@@ -56,7 +56,7 @@ a{
     text-decoration: underline;
 }
 
-a, button, h2, p, h3, .textUser{
+a, button, h2, p, h3, .textUser, ul, li, .twitterButton{
     font-family: Arial, Helvetica, sans-serif;
 }
 img{
@@ -78,18 +78,7 @@ header{
     width: 25%;
     justify-content: space-evenly;
 }
-main nav li{
-    display: inline-block;
-    color: gray;
-    margin-right: 1rem;
-}
-main nav li button{
-    color: gray;
-    border-color: grey;
-}
-li img{
-    width: 40px;
-}
+
 h1{
     font-size: 3rem;
     font-weight: 900;
@@ -102,7 +91,7 @@ p{
     font-size: 1.2rem;
 }
 button{
-    padding: 0.2rem 0.5rem;
+    padding: 0.75rem 0.75rem;
     border: 2px solid black;
     border-radius: 2rem;
 }
@@ -111,7 +100,8 @@ button{
     font-weight: bold;
     color: rgb(59, 59, 59)
 }
-nav, .mainPage, article, aside, .twitterSection, .peopleElement{
+nav, .mainPage, article, aside, .twitterSection, .peopleElement,
+.articleBotton, .articleBotton > ul, .articleBotton > div{
     display: flex;
 }
 aside{
@@ -135,6 +125,11 @@ nav .tabs{
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 600;
+}
+.tabs:last-child a{
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    font-weight: 900;
 }
 .articleText{
     width: 80%;
@@ -182,6 +177,21 @@ nav .tabs{
     padding: 2rem 0;
     border-bottom: 1px solid gray;
 }
+.twitterButton{
+    display: inline-flex;
+            align-items: center;
+            background-color: #fff;
+            color: black;
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 2rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+}
+button img{
+    width: 30px;;
+}
 .recommended{
     text-align: start;
     font-weight: bold;
@@ -199,8 +209,13 @@ nav .tabs{
     display: flex;
     flex-wrap: wrap;
 }
-.pill{
+
+.pills > .pill{
     margin: 0.3rem;
+}
+.pill{
+    border: none;
+    background-color: rgb(235, 235, 235);
 }
 .peopleElement{
     align-items: center;
@@ -222,4 +237,28 @@ nav .tabs{
     align-items: start;
     flex-direction: column;
     padding: 1rem;
+}
+.peopleNames p:first-child{
+    font-weight: 700;
+}
+.peopleNames p:last-child{
+    font-weight: 200;
+}
+.articleBotton{
+    justify-content: space-between;
+}
+.articleBotton ul{
+    align-items: center;
+}
+.articleBotton li{
+ margin-right: 30px;
+}
+.articleBotton li:first-child{
+    list-style: none;
+}
+.articleBotton img{
+    max-width: 30px;
+}
+.articleBotton img:last-child{
+    margin-right: 20px;
 }
